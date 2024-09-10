@@ -6,7 +6,7 @@ Plain Terraform was used as I was not familiar with Terragrunt; The Terraform fi
 <br><br>
 
 ### 2. Deploy a simple application on the Kubernetes Cluster
-The code for the simple static web application can be found in the "/webapp" folder. The core of the folder is the Dockerfile that, upon building, creates an image that can be deployed into a Kubernetes cluster. The image is then deployed into the Kubernetes Cluster hosted on EKS.
+The code for the simple static web application can be found in the "/webapp" folder. The core of the folder is the Dockerfile that, upon building, creates an image that can be deployed into a Kubernetes cluster. The image is then published to a public Docker Hub repository and deployed into the Kubernetes Cluster hosted on EKS.
 
 The .yaml file used to deploy the web application can be found in "/kubernetes/webapp.yaml".
 
