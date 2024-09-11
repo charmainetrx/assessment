@@ -1,6 +1,6 @@
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ig_nWLtln7ybZO_yrQHUCg.png">
-<sup>Source: https://towardsdatascience.com/how-to-set-up-ingress-controller-in-aws-eks-d745d9107307 (To be updated)</sup>
-<br>
+<img src="https://developer.hashicorp.com/_next/image?url=https%3A%2F%2Fcontent.hashicorp.com%2Fapi%2Fassets%3Fproduct%3Dtutorials%26version%3Dmain%26asset%3Dpublic%252Fimg%252Fterraform%252Feks%252Foverview.png%26width%3D1522%26height%3D1054&w=1920&q=75&dpl=dpl_GBS3uS2pG2uAK69z3SdsMFPrR751" width="700"><br><sup>Diagram of the EKS setup. Source: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks</sup>
+<br><br>
+<img src="https://i.imgur.com/NojhWBQ.png" width="700"><br><sup>Rough diagram of the setup inside the EKS cluster.</sup>
 
 ### 1. Deploy a Kubernetes Cluster
 <p>The official Hashicorp documentation was used to provision a Kubernetes cluster through EKS on AWS. The link to the documentation is as follows: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks</p>
@@ -28,8 +28,6 @@ Command to deploy the web application to EKS:<br>
 
 Command to deploy the ingress to EKS:<br>
 `kubectl apply -f kubernetes/ingress.yaml`
-
-<i>(Encountered an issue with Route53, unable to get a domain.)</i>
 <br><br>
 
 ### 3. Integrate System Metrics with Elastic Cloud
