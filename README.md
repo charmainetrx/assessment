@@ -3,8 +3,9 @@
 <br>
 
 ### 1. Deploy a Kubernetes Cluster
-<p>Plain Terraform was used as I was not familiar with Terragrunt; The Terraform files can be found in the "/terraform" folder.</p>
+<p>Plain Terraform was used to deploy the AWS resources as I was not familiar with Terragrunt; The Terraform files can be found in the "/terraform" folder.</p>
 
+Commands to deploy to AWS:<br>
 `terraform init`<br>
 `terraform apply`
 <br><br>
@@ -17,12 +18,14 @@
 `kubectl apply -f kubernetes/webapp.yaml`
 
 <br>
-<i>Ingress setup is still in progress.</i>
 <p>The Ingress Controller used in this solution is the AWS Load Balancer Controller that is deployed with Helm. The steps to deploy this Ingress Controller into EKS is as documented on the following website: https://docs.aws.amazon.com/eks/latest/userguide/lbc-helm.html</p>
 <br>
 <p>An Ingress resource is then created and deployed to the EKS cluster to allow for traffic outside of the cluster to communicate with the web application.</p>
-<i>Encountered an issue with Route53, unable to get a domain.</i>
+
+`kubectl apply -f kubernetes/ingress.yaml`
+
+<i>(Encountered an issue with Route53, unable to get a domain.)</i>
 <br><br>
 
 ### 3. Integrate System Metrics with Elastic Cloud
-<p>Integration of Elastic Cloud with Kubernetes was done via the default sign-up steps when creating a new Elastic Cloud trial account.</p>
+<p>Integration of Elastic Cloud with Kubernetes was done via the default sign-up steps when creating a new Elastic Cloud trial account. This involves a deployment of an elastic agent as configured in "/kubernetes/elastic-agent.yaml" to allow the Elastic instance to pull data from the EKS cluster.</p>
