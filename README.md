@@ -6,6 +6,7 @@
 <p>Plain Terraform was used to deploy the AWS resources as I was not familiar with Terragrunt; The Terraform files can be found in the "/terraform" folder.</p>
 
 Commands to deploy to AWS:<br>
+`cd terraform`<br>
 `terraform init`<br>
 `terraform apply`
 <br><br>
