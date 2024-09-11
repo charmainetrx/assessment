@@ -1,5 +1,6 @@
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ig_nWLtln7ybZO_yrQHUCg.png">
-
+<sup>Source: https://towardsdatascience.com/how-to-set-up-ingress-controller-in-aws-eks-d745d9107307</sup>
+<br>
 
 ### 1. Deploy a Kubernetes Cluster
 <p>Plain Terraform was used as I was not familiar with Terragrunt; The Terraform files can be found in the "/terraform" folder.</p>
