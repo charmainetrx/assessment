@@ -5,6 +5,8 @@
 ### 1. Deploy a Kubernetes Cluster
 <p>The official Hashicorp documentation was used to provision a Kubernetes cluster through EKS on AWS. The link to the documentation is as follows: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks</p>
 
+<p>The Terraform files used can be found in the "/terraform" folder.</p>
+
 Commands to deploy to AWS:<br>
 `cd terraform`<br>
 `terraform init`<br>
