@@ -1,9 +1,9 @@
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ig_nWLtln7ybZO_yrQHUCg.png">
-<sup>Source: https://towardsdatascience.com/how-to-set-up-ingress-controller-in-aws-eks-d745d9107307</sup>
+<sup>Source: https://towardsdatascience.com/how-to-set-up-ingress-controller-in-aws-eks-d745d9107307 (To be updated)</sup>
 <br>
 
 ### 1. Deploy a Kubernetes Cluster
-<p>Plain Terraform was used to deploy the AWS resources as I was not familiar with Terragrunt; The Terraform files can be found in the "/terraform" folder.</p>
+<p>The official Hashicorp documentation was used to provision a Kubernetes cluster through EKS on AWS. The link to the documentation is as follows: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks</p>
 
 Commands to deploy to AWS:<br>
 `cd terraform`<br>
