@@ -29,3 +29,6 @@ Commands to deploy to AWS:<br>
 
 ### 3. Integrate System Metrics with Elastic Cloud
 <p>Integration of Elastic Cloud with Kubernetes was done via the default sign-up steps when creating a new Elastic Cloud trial account. This involves a deployment of an elastic agent as configured in "/kubernetes/elastic-agent.yaml" to allow the Elastic instance to pull data from the EKS cluster.</p>
+
+<p>Metricbeat was also deployed into the EKS cluster to gather metrics from the pods. The below image shows a simple dashboard from the gathered metrics.</p>
+<img src="https://i.imgur.com/PE91Nil.png">
